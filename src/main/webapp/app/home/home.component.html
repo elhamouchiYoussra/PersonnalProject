@@ -6,30 +6,9 @@
   <div class="container">
     <div class="d-md-flex align-items-center justify-content-between">
       <div>
-        <h1>Immobilier <span class="text-warning">Maroc</span></h1>
-        <div class="lead my-4">
-          <div  [ngSwitch]="account !== null">
-            <div  *ngSwitchCase="true">
-              <span *ngIf="account">You are logged in as user "{{ account.login }}".</span>
-            </div>
-
-            <div  *ngSwitchCase="false">
-              <span>If you want to </span>
-              <a class="text-warning" (click)="login()">sign in</a
-              ><span
-            >, you can try the default accounts:<br />- Administrator (login="admin" and password="admin") <br />- User (login="user" and
-          password="user").</span
-            >
-            </div>
-            <div *ngSwitchCase="false">
-              <span>You don't have an account yet?</span>&nbsp;
-              <a  class="text-warning"  routerLink="account/register">Register a new account</a>
-            </div>
-          </div>
-          <span id="home-logged-message" *ngIf="account">You are logged in as user "{{ account.login }}".</span>
-        </div>
+        <h1>web <span class="text-warning">site</span></h1>
         <div class="text-center">
-          <button class="btn btn-lg btn-warning">Publiez vos annonces</button>
+          <button class="btn btn-lg btn-warning">Search</button>
         </div>
       </div>
       <div>
